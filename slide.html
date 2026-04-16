@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide html</title>
+</head>
+
+<style>
+
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        flex-direction: column;     
+        gap: 10px; 
+    }
+    
+    #flipUp,#panel,#flipDown,#flipToggle{
+        width: 40%;
+        height: 5%;
+        background-color: aquamarine;
+        text-align: center;
+        cursor: pointer;
+    }
+    #panel{
+        padding: 50px;
+        background-color: aquamarine;
+        width: 33.5%;
+        display: none;
+    }
+</style>
+
+<body>
+    <div id="flipDown" style="background-color: greenyellow;">
+        Click to slide down
+    </div>
+    <div id="flipUp" style="background-color: salmon">
+        Click to slide up
+    </div>
+    <div id="flipToggle" style="background-color: seagreen">
+        Click to slide up
+    </div>
+    <div id="panel">
+        Hello world!
+    </div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+<script src="js/slide.js"></script>
+</html>
+
+
+

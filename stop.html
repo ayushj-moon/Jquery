@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .flip,.panel{
+        height: 50px;
+        width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .panel{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: none;
+    }
+</style>
+<body>
+    
+   <button id="but">click to stop</button>     
+   <div class="flip" style="background-color: aqua;">Click to slidedown</div>
+    <div class="panel" style="background-color: aquamarine;">Hello world</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+<script src="js/stop.js"></script>
+</html>

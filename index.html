@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery tutorial</title>
+</head>
+
+<body>
+    <!-- <p>this is my body 1</p>
+    <p id="second">this is my body 2</p>
+    <p class="third">this is my body 3</p>
+    <p>this is my body 4</p>
+    <p>this is my body 5</p> -->
+
+
+    <h2>This is a heading</h2>
+
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+
+    <button id="but">click me</button>
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, officiis earum asperiores hic unde eaque rem, voluptas dicta similique nobis cumque. Possimus tempora consectetur laboriosam molestias, voluptatem, nulla minima maxime hic exercitationem dignissimos distinctio quibusdam? Nesciunt in a fugit accusantium! Odit incidunt similique quo. Earum aspernatur veritatis explicabo nostrum corporis dicta, quam perferendis deleniti sunt porro culpa nesciunt iure quas hic, magni officiis aliquid dolores architecto est?
+    </p>
+
+
+<!-- 
+    <button>Click me to hide paragraphs</button> -->
+
+</body>
+<script src="js/jquery-4.0.0.js"></script>
+
+
+<!-- this is cdn
+<script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script> -->
+<script>
+    console.log($);
+
+    // $('selector').action()
+
+
+    $(document).ready(function () {
+        $('p').click(); //click on p
+        $('p').click(function () {
+            console.log("you clicked on p", this);
+            // $('p').hide();
+            // $(this).hide();
+
+            // $("#id")
+            // $(".class")
+        });
+    })
+
+    // there are three main types of selector in jquery
+
+    // 1.element selector
+    // 2.id selector
+    // 3.class selector
+
+
+
+    // // 1.element selector - this is an example of element selector which clicks on all p
+    // $('p').click();
+
+    // // 2.Id selector - this is an example of id selector 
+    // $('#second').click();
+
+    // // 3.class selector - this is an example of class selector 
+    // $('#second').click();
+
+    // // other selector
+
+    // $('*').click();
+
+</script>
+
+<script src="js/selector.js"></script>
+
+</html>
